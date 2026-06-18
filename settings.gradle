@@ -1,0 +1,4 @@
+rootProject.name = 'distributed-data-platform-reference-architecture'
+
+include 'data-platform-contracts'
+include 'data-platform-cdc'
