@@ -19,6 +19,29 @@ Requires JDK 17+.
 
 Daily learning notes live under `docs/learning/`.
 
+## Databricks Artifacts
+
+Databricks notebooks are saved as source files under `notebooks/databricks/`.
+
+Use the date-prefixed convention:
+
+```text
+notebooks/databricks/YYYY-MM-DD-checkpoint-name.py
+```
+
+Reusable SQL that is not tied to one notebook lives under `sql/databricks/`.
+
+Use Databricks source format for mixed PySpark and SQL notebooks:
+
+```python
+# Databricks notebook source
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT 1;
+```
+
 ## Wiki Anchors
 
 - `/Users/hemantkgupta/CSE-Raw/raw-blog/distributed-data-platform-reference-architecture/distributed-data-platform-reference-architecture.md`
