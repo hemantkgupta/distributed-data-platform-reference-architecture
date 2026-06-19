@@ -47,6 +47,21 @@ public record SourceContract(
         return columns.stream().filter(column -> column.name().equals(name)).findFirst();
     }
 
+    public SourceContract withStatus(ContractStatus newStatus, Instant newEffectiveFrom) {
+        return new SourceContract(
+                contractId,
+                version,
+                sourceSystem,
+                datasetName,
+                owner,
+                grain,
+                primaryKeyColumns,
+                columns,
+                freshnessSlo,
+                newStatus,
+                newEffectiveFrom);
+    }
+
     public CompatibilityResult checkBackwardCompatibility(SourceContract previous) {
         Objects.requireNonNull(previous, "previous");
         List<String> violations = new ArrayList<>();
