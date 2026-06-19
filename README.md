@@ -23,10 +23,10 @@ Daily learning notes live under `docs/learning/`.
 
 Databricks notebooks are saved as source files under `notebooks/databricks/`.
 
-Use the date-prefixed convention:
+Use the day-prefixed convention:
 
 ```text
-notebooks/databricks/YYYY-MM-DD-checkpoint-name.py
+notebooks/databricks/day_XX_checkpoint_name.py
 ```
 
 Reusable SQL that is not tied to one notebook lives under `sql/databricks/`.

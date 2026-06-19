@@ -16,6 +16,6 @@ This repo follows the daily learning/build track for `distributed-data-platform-
 - JUnit 5 and AssertJ for tests.
 - One small checkpoint per day unless explicitly expanded.
 - Build with `./gradlew build --console=plain` whenever code changes.
-- Save Databricks SQL/PySpark notebooks as source files under `notebooks/databricks/YYYY-MM-DD-checkpoint-name.py`.
+- Save Databricks SQL/PySpark notebooks as source files under `notebooks/databricks/day_XX_checkpoint_name.py`.
 - Save reusable Databricks SQL under `sql/databricks/`.
 - Link notebooks, SQL, and Java modules from the daily learning note.

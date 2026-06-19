@@ -5,7 +5,7 @@ Save exported Databricks notebooks here as source `.py` files.
 Naming convention:
 
 ```text
-YYYY-MM-DD-checkpoint-name.py
+day_XX_checkpoint_name.py
 ```
 
 Use Databricks source format so the file can round-trip back into a workspace:
